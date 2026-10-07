@@ -1,0 +1,57 @@
+# PhilippineLeads.com
+
+> PhilippineLeads.com helps Philippine businesses get more customers. A Philippine customer-acquisition company based in Taguig, Metro Manila, operating since 2011.
+
+Contact: 0916 750 2657 | info@PhilippineLeads.com | Taguig, Metro Manila, Philippines
+
+Pages on this site are HTML. Use this file as the short map, then open a linked page only when you need it. The search-engine list of indexable pages is https://philippineleads.com/sitemap.xml. Crawler access rules are at https://philippineleads.com/robots.txt.
+
+## Services
+- [Lead Generation in the Philippines](https://philippineleads.com/services/lead-generation-philippines/): Lead generation services in the Philippines. We build targeted prospect lists and outreach campaigns that turn into conversations, appointments and new customers.
+- [Telemarketing Services in the Philippines](https://philippineleads.com/services/telemarketing-philippines/): Professional Filipino telemarketing teams for outbound prospecting, lead qualification, appointment setting, follow-up and customer reactivation.
+- [Appointment Setting in the Philippines](https://philippineleads.com/services/appointment-setting-philippines/): Appointment setting services in the Philippines. We qualify prospects and book sales meetings directly into your calendar so your team can focus on closing.
+- [Digital Marketing in the Philippines](https://philippineleads.com/services/digital-marketing-philippines/): Digital marketing in the Philippines focused on customers, not clicks. SEO, AI search, Google Ads, Facebook, Instagram, LinkedIn and YouTube marketing.
+- [SEO Services in the Philippines](https://philippineleads.com/services/seo-philippines/): SEO services in the Philippines. Keyword research, technical SEO, on-page optimization, content, local SEO and authority building that bring in real customers.
+- [ChatGPT & AI Search Optimization in the Philippines](https://philippineleads.com/services/chatgpt-seo-philippines/): Get your Philippine business recommended by ChatGPT, Google AI Overviews and other AI search platforms. AI search optimization from PhilippineLeads.com.
+- [Google Business Profile & Local SEO in the Philippines](https://philippineleads.com/services/google-business-profile-philippines/): Get more local customers from Google Search and Google Maps. Google Business Profile optimization and local SEO for businesses across the Philippines.
+- [LinkedIn Lead Generation in the Philippines](https://philippineleads.com/services/linkedin-lead-generation-philippines/): Reach Philippine business owners, CEOs and decision-makers on LinkedIn. Targeting, connection campaigns, messaging, follow-ups and appointment generation.
+- [Social Media Marketing in the Philippines](https://philippineleads.com/services/social-media-marketing-philippines/): Social media management in the Philippines. Consistent, professional content across Facebook, Instagram, LinkedIn and other channels that builds trust and inquiries.
+- [Google Ads Management in the Philippines](https://philippineleads.com/services/google-ads-philippines/): Google Ads management in the Philippines. Capture customers actively searching for what you sell with well-targeted, conversion-focused search campaigns.
+- [Facebook & Instagram Ads in the Philippines](https://philippineleads.com/services/facebook-ads-philippines/): Facebook and Instagram advertising in the Philippines. Reach targeted Philippine consumers and business audiences and turn them into inquiries and customers.
+- [Email Marketing & Automation in the Philippines](https://philippineleads.com/services/email-marketing-philippines/): Email marketing and automation in the Philippines. Build prospect lists, create campaigns and follow up with potential customers systematically.
+- [Virtual Assistants in the Philippines](https://philippineleads.com/services/virtual-assistant-philippines/): Hire experienced Filipino virtual assistants for sales support, admin, customer service, marketing, research, data entry, scheduling and CRM management.
+- [SDR & BDR Outsourcing in the Philippines](https://philippineleads.com/services/sdr-outsourcing-philippines/): Add dedicated Sales Development Representatives to your business without building an internal sales department. SDR and BDR outsourcing in the Philippines.
+- [BPO Services in the Philippines](https://philippineleads.com/services/bpo-services-philippines/): Flexible BPO services in the Philippines. Dedicated outsourced teams for sales, support, administration, marketing and business operations.
+- [Website Design in the Philippines](https://philippineleads.com/services/website-design-philippines/): Website design and development in the Philippines. Professional websites built to get found, build trust and generate leads.
+
+## Industries
+- [Insurance](https://philippineleads.com/industries/insurance/): Home, auto, commercial, life, health and other insurance customer acquisition.
+- [Real Estate](https://philippineleads.com/industries/real-estate/): Buyer, seller, investor, developer and referral partner lead generation.
+- [BPO & Outsourcing](https://philippineleads.com/industries/bpo/): Help Philippine BPO companies acquire domestic and international clients.
+- [Construction](https://philippineleads.com/industries/construction/): Reach developers, property managers, businesses and homeowners needing construction services.
+- [Security Agencies](https://philippineleads.com/industries/security-agencies/): Generate opportunities with buildings, subdivisions, warehouses, schools, offices and other organizations requiring security.
+- [Accounting & Professional Services](https://philippineleads.com/industries/accounting/): Reach SMEs and decision-makers requiring accounting, bookkeeping, tax and advisory services.
+- [Financial Services](https://philippineleads.com/industries/financial-services/): Customer acquisition for financial advisors, lenders and other financial organizations.
+- [Automotive](https://philippineleads.com/industries/automotive/): Marketing for dealerships, automotive services and related businesses.
+- [Recruitment & Manpower](https://philippineleads.com/industries/recruitment/): Connect staffing and manpower companies with organizations actively hiring.
+- [Healthcare](https://philippineleads.com/industries/healthcare/): Patient acquisition and B2B outreach for clinics and healthcare organizations.
+- [Technology & SaaS](https://philippineleads.com/industries/technology/): Build B2B pipelines for Philippine technology companies.
+- [Education & Training](https://philippineleads.com/industries/education/): Generate student inquiries and institutional partnerships.
+- [Hospitality & Restaurants](https://philippineleads.com/industries/hospitality/): Drive local discovery, reservations, events and customer acquisition.
+- [Professional Services](https://philippineleads.com/industries/professional-services/): Lead generation for lawyers, consultants, engineers and other professional organizations.
+
+## Company
+- [About](https://philippineleads.com/about/): Who PhilippineLeads.com is and how the company works.
+- [Clients & Reviews](https://philippineleads.com/clients-reviews/): Companies worked with and client feedback.
+- [Webinars](https://philippineleads.com/webinars/): Free live and recorded sessions.
+- [Blog](https://philippineleads.com/blog/): Growth strategy articles.
+- [Resources](https://philippineleads.com/resources/): Guides, videos, webinars and articles in one place.
+- [Contact](https://philippineleads.com/contact/): Request a free growth consultation.
+- [Privacy Policy](https://philippineleads.com/privacy-policy/): What personal information is collected, including the cookie notice.
+
+## Optional
+
+- [Guides](https://philippineleads.com/guides/): Step-by-step resources. This page is marked noindex.
+- [Videos](https://philippineleads.com/videos/): Video library. This page is marked noindex.
+- [Sitemap](https://philippineleads.com/sitemap.xml): Every indexable URL for search engines.
+- [Robots](https://philippineleads.com/robots.txt): Crawler access rules.

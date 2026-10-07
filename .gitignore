@@ -1,0 +1,18 @@
+# Working files. The live site is the HTML at the project root.
+Claude outputs/
+Logo/
+Website/
+Website Preview/
+Website Source/
+
+# Netlify config. This site deploys on Vercel.
+netlify.toml
+
+# Archives and local tooling
+*.zip
+.vercel/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

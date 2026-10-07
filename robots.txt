@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# /thank-you/ and /booked/ are crawlable on purpose. Both pages send noindex,
+# and a crawler has to be allowed to fetch the page in order to see that tag.
+
+Sitemap: https://philippineleads.com/sitemap.xml
