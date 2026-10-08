@@ -33,18 +33,5 @@
         }
       ]
     }
-  ],
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.philippineleads.com"
-        }
-      ],
-      "destination": "https://philippineleads.com/:path*",
-      "permanent": true
-    }
   ]
 }
