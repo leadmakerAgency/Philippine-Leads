@@ -89,7 +89,7 @@
     allow.type = 'button';
     allow.className = 'btn btn-p';
     allow.textContent = 'Allow and load calendar';
-    allow.addEventListener('click', function(){ saveConsent('all'); });
+    allow.addEventListener('click', function(){ saveConsent('v2-all'); });
     var open = document.createElement('a');
     open.className = 'btn btn-ol';
     open.href = cal.getAttribute('data-url');
@@ -105,7 +105,7 @@
 
   var startCalendly = function(){
     if (!cal || calStarted) return;
-    if (readConsent() !== 'all') {
+    if (readConsent() !== 'v2-all') {
       showCalFallback();
       return;
     }
@@ -153,7 +153,7 @@
   banner.setAttribute('aria-labelledby', 'cookie-title');
   banner.setAttribute('aria-describedby', 'cookie-desc');
   banner.hidden = true;
-  banner.innerHTML = '<div class="cookie-card"><h2 id="cookie-title">Cookies on this site</h2><p id="cookie-desc">We store one necessary cookie to remember your choice. Scheduling cookies from Calendly load only if you accept, and only when you book a call. This site does not use advertising or analytics cookies.</p><div class="cookie-actions"><button type="button" class="btn btn-p" id="cookie-accept">Accept</button><button type="button" class="btn btn-ol" id="cookie-reject">Reject</button><a href="/privacy-policy/#cookies">Cookie details</a></div></div>';
+  banner.innerHTML = '<div class="cookie-card"><h2 id="cookie-title">Cookies on this site</h2><p id="cookie-desc">We store one necessary cookie to remember your choice. Accept allows Google Analytics to measure page visits, and lets Calendly load when you book a call. Reject leaves the site usable without those cookies.</p><div class="cookie-actions"><button type="button" class="btn btn-p" id="cookie-accept">Accept</button><button type="button" class="btn btn-ol" id="cookie-reject">Reject</button><a href="/privacy-policy/#cookies">Cookie details</a></div></div>';
   document.body.appendChild(banner);
 
   var showBanner = function(moveFocus){
@@ -163,10 +163,16 @@
     if (accept) accept.focus();
   };
 
+  var applyAnalytics = function(value){
+    if (!window.gtag) return;
+    gtag('consent', 'update', {analytics_storage: value === 'v2-all' ? 'granted' : 'denied'});
+  };
+
   var saveConsent = function(value){
     writeConsent(value);
     banner.hidden = true;
-    if (value === 'all') startCalendly();
+    applyAnalytics(value);
+    if (value === 'v2-all') startCalendly();
     else if (cal) {
       calStarted = false;
       cal.innerHTML = '';
@@ -174,8 +180,8 @@
     }
   };
 
-  document.getElementById('cookie-accept').addEventListener('click', function(){ saveConsent('all'); });
-  document.getElementById('cookie-reject').addEventListener('click', function(){ saveConsent('necessary'); });
+  document.getElementById('cookie-accept').addEventListener('click', function(){ saveConsent('v2-all'); });
+  document.getElementById('cookie-reject').addEventListener('click', function(){ saveConsent('v2-necessary'); });
   document.addEventListener('click', function(e){
     var trigger = e.target.closest('[data-cookie-settings]');
     if (!trigger) return;
@@ -183,7 +189,7 @@
     showBanner(true);
   });
 
-  if (!readConsent()) showBanner(false);
+  if (readConsent() !== 'v2-all' && readConsent() !== 'v2-necessary') showBanner(false);
 
   var y = document.getElementById('yr');
   if (y) y.textContent = new Date().getFullYear();
