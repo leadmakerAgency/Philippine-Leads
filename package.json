@@ -1,0 +1,13 @@
+{
+  "name": "philippine-leads",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "node ./node_modules/@11ty/eleventy/cmd.cjs",
+    "dev": "node ./node_modules/@11ty/eleventy/cmd.cjs --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

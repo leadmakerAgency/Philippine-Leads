@@ -1,0 +1,23 @@
+<section class="phead"><div class="wrap"><ol class="crumbs"><li><a href="/">Home</a></li><li><a href="/resources/">Resources</a></li><li aria-current="page">Blog</li></ol><h1>Philippine Business Blog</h1><p class="sub">Marketing, sales, technology and growth strategies for Philippine businesses.</p></div></section>
+{% if collections.posts.length %}
+<section class="sec"><div class="wrap">
+<div class="grid g3 bgrid">
+{% for post in pagedPosts %}{% if post %}
+<a class="bcard" href="{{ post.url }}">
+<span class="bthumb">{% if post.data.featured_image %}<img src="{{ post.data.featured_image }}" alt="" loading="{{ 'eager' if loop.index <= 3 else 'lazy' }}" width="1536" height="1024" onerror="this.remove()">{% endif %}</span>
+<span class="bbody"><time datetime="{{ post.date | isoDate }}">{{ post.date | postDate }}</time><b>{{ post.data.title }}</b>{% if post.data.excerpt %}<span class="bexc">{{ post.data.excerpt }}</span>{% endif %}<span class="more-l">Read article</span></span>
+</a>
+{% endif %}{% endfor %}
+</div>
+{% if pagination.pages.length > 1 %}
+<nav class="bpager" aria-label="Blog pages">
+{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&larr; Newer</a>{% else %}<span aria-disabled="true">&larr; Newer</span>{% endif %}
+{% for entry in pagination.hrefs %}<a href="{{ entry }}"{% if loop.index0 == pagination.pageNumber %} aria-current="page"{% endif %}>{{ loop.index }}</a>{% endfor %}
+{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Older &rarr;</a>{% else %}<span aria-disabled="true">Older &rarr;</span>{% endif %}
+</nav>
+{% endif %}
+</div></section>
+{% else %}
+<section class="sec"><div class="wrap"><div class="shead"><span class="kicker">Coming up</span><h2 class="h">Articles on the way</h2><p>Practical, Philippine-specific guides on getting more customers. Register for our free webinar to hear about new articles first.</p></div><div class="grid g3"><div class="post"><span class="n">01</span><div><b>How to Generate More Leads in the Philippines</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">02</span><div><b>Best Lead Generation Strategies for Philippine Businesses</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">03</span><div><b>How Much Does Digital Marketing Cost in the Philippines?</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">04</span><div><b>SEO Cost in the Philippines: What Businesses Should Expect</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">05</span><div><b>How to Get Your Philippine Business Recommended by ChatGPT</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">06</span><div><b>Telemarketing in the Philippines: Does It Still Work?</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">07</span><div><b>Facebook Ads vs Google Ads for Philippine Businesses</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">08</span><div><b>How Philippine SMEs Can Find More Customers</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">09</span><div><b>How to Generate B2B Leads in the Philippines</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">10</span><div><b>Best Ways to Market a Business in Metro Manila</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">11</span><div><b>How to Find Corporate Clients in the Philippines</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">12</span><div><b>LinkedIn Lead Generation for Philippine Companies</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">13</span><div><b>How to Outsource Sales in the Philippines</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">14</span><div><b>How Much Does a Virtual Assistant Cost in the Philippines?</b><span class="soon">Coming soon</span></div></div><div class="post"><span class="n">15</span><div><b>How to Build an Outbound Sales Team in the Philippines</b><span class="soon">Coming soon</span></div></div></div><div class="btns" style="margin-top:32px"><a href="/webinars/" class="btn btn-p">Register for the Free Webinar</a></div></div></section>
+{% endif %}
+{% include "cta.njk" %}

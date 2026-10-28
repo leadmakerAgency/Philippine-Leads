@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms@0.160.0/schema/sveltia-cms.json
+backend:
+  name: github
+  repo: leadmakerAgency/Philippine-Leads
+  branch: main
+
+media_folder: "content/media"
+public_folder: "/media"
+
+collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    folder: "content/posts"
+    create: true
+    format: frontmatter
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog-post.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        hint: "URL-friendly slug, e.g. how-to-generate-leads-in-the-philippines"
+        pattern:
+          - "^[a-z0-9-]+$"
+          - "Use only lowercase letters, numbers, and dashes."
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        time_format: "HH:mm"
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+        picker_utc: true
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
+        required: false
+        hint: "If enabled, the post stays hidden on the live site until draft is turned off."
+      - { label: "Excerpt", name: "excerpt", widget: "text", hint: "Short summary shown on blog cards and in search results." }
+      - { label: "Featured Image", name: "featured_image", widget: "image", required: false, hint: "Thumbnail shown on the blog list and at the top of the article." }
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        hint: "Wait until image upload finishes before saving so file paths are persisted."
+        editor_components:
+          - code-block
+          - image

@@ -1,0 +1,26 @@
+---
+layout: base.njk
+---
+<section class="phead"><div class="wrap"><ol class="crumbs"><li><a href="/">Home</a></li><li><a href="/resources/">Resources</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">{{ title }}</li></ol><h1>{{ title }}</h1><p class="sub"><time datetime="{{ date | isoDate }}">{{ date | postDate }}</time></p></div></section>
+<section class="sec bpost"><div class="wrap narrow">
+{% if featured_image %}<figure class="bhero"><img src="{{ featured_image }}" alt="{{ title }}" width="1536" height="1024" onerror="this.parentNode.remove()"></figure>{% endif %}
+<article class="prose">
+{{ content | safe }}
+</article>
+<p class="bback"><a href="/blog/" class="btn btn-ol">&larr; All articles</a></p>
+</div></section>
+{% set related = collections.posts | relatedPosts(page.url, 3) %}
+{% if related.length %}
+<section class="sec alt"><div class="wrap">
+<div class="shead"><span class="kicker">Keep reading</span><h2 class="h">More from the blog</h2></div>
+<div class="grid g3 bgrid">
+{% for post in related %}
+<a class="bcard" href="{{ post.url }}">
+<span class="bthumb">{% if post.data.featured_image %}<img src="{{ post.data.featured_image }}" alt="" loading="lazy" width="1536" height="1024" onerror="this.remove()">{% endif %}</span>
+<span class="bbody"><time datetime="{{ post.date | isoDate }}">{{ post.date | postDate }}</time><b>{{ post.data.title }}</b><span class="more-l">Read article</span></span>
+</a>
+{% endfor %}
+</div>
+</div></section>
+{% endif %}
+{% include "cta.njk" %}

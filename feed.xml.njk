@@ -1,0 +1,26 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>PhilippineLeads.com Blog</title>
+  <subtitle>Marketing, sales and lead generation strategies for Philippine businesses.</subtitle>
+  <link href="{{ site.url }}/feed.xml" rel="self"/>
+  <link href="{{ site.url }}/blog/"/>
+  <id>{{ site.url }}/blog/</id>
+  <updated>{% if collections.posts.length %}{{ collections.posts[0].date | atomDate }}{% else %}{{ site.buildDate }}T00:00:00.000Z{% endif %}</updated>
+  <author>
+    <name>PhilippineLeads.com</name>
+    <email>info@PhilippineLeads.com</email>
+  </author>
+{%- for post in collections.posts %}
+  <entry>
+    <title>{{ post.data.title | escape }}</title>
+    <link href="{{ site.url }}{{ post.url }}" rel="alternate" type="text/html"/>
+    <id>{{ site.url }}{{ post.url }}</id>
+    <updated>{{ post.date | atomDate }}</updated>
+    <summary type="text">{{ (post.data.excerpt | default(post.data.title)) | escape }}</summary>
+  </entry>
+{%- endfor %}
+</feed>
